@@ -1,0 +1,9 @@
+opencv-python
+mediapipe==0.10.21
+numpy
+pyautogui
+pycaw
+comtypes
+screen-brightness-control
+Pillow
+pystray

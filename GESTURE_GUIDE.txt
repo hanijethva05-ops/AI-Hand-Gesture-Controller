@@ -1,0 +1,59 @@
+AI HAND GESTURE CONTROLLER — GESTURE GUIDE
+
+The official MediaPipe model recognizes common gestures such as Open Palm,
+Closed Fist, Pointing Up, Thumb Up, Thumb Down, Victory, and I Love You.
+The app also derives pinch and a few finger poses from landmarks. Recognition
+can vary with camera position, lighting, orientation, and hand size.
+
+NORMAL MODE
+- Open Palm: move cursor (index fingertip tracks the cursor)
+- Thumb + Index pinch: left click
+- Thumb + Middle pinch: right click
+- Thumb + Ring pinch: double click
+- Victory/Peace: scroll mode (move hand vertically)
+- Thumb Up / Thumb Down: volume up/down
+- Four fingers up with thumb folded: brightness mode (hand height sets level)
+- Middle + Ring up, Index + Pinky down: Copy
+- Index + Pinky up, Middle + Ring down: Paste
+- Middle + Pinky up, Index + Ring down: Undo
+- Index + Ring up, Middle + Pinky down: Redo
+- I Love You / Shaka: new browser tab
+- Rock sign: screenshot
+
+PRESENTATION MODE
+- Swipe left/right: previous/next slide
+- Peace: start presentation (F5)
+- Closed fist: black screen (B; works in compatible slide apps)
+- Thumb up/down: next/previous slide
+
+GAMING MODE
+- Pointing Up: press W
+- Peace: press Space
+- Thumb Up: jump; Thumb Down: crouch
+- Pinch: interact
+- Swipe left/right: move left/right
+- Copy pose: reload
+- Paste pose: interact
+
+BROWSER MODE
+- Pointing Up: new tab
+- Peace: close current tab
+- Closed fist: refresh
+- Open Palm: reopen last closed tab
+- I Love You: next tab
+- Copy pose: previous tab
+- Thumb Up/Down: zoom in/out
+
+WINDOWS MODE
+- Peace: Alt+Tab
+- Closed fist: Show Desktop
+- Open Palm: Task View
+- Thumb Up/Down: switch virtual desktops
+- Rock sign: screenshot
+
+Safety notes:
+- The app starts PAUSED. Press P in the webcam window to resume.
+- Press Q to quit, or Ctrl+C in the terminal.
+- Keep the webcam window focused for keyboard controls.
+- Screenshot files are saved under Pictures/GestureScreenshots.
+- Close tabs, type shortcuts, and other actions affect the currently active app.

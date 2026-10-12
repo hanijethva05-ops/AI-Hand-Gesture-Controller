@@ -1,0 +1,14 @@
+Gesture Controller — quick key reference
+
+M  Switch mode
+P  Pause/resume
+C  Start hand calibration
+R  Reset calibration
+H  Toggle HUD
+G  Toggle gesture guide
+L  Toggle action log
+1  Start macro recording
+2  Stop/save macro recording
+3  Play saved macro
+S  Save calibration
+Q  Quit safely

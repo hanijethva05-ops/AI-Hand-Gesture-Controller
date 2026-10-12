@@ -1,0 +1,30 @@
+# Python environment
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Build files
+build/
+dist/
+installer_output/
+*.spec
+
+# Downloaded ML model
+models/*.task
+models/*.download
+
+# Local settings and recordings
+calibration.json
+macros.json
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Editor and OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

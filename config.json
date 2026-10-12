@@ -1,0 +1,73 @@
+{
+  "camera_index": 0,
+  "camera_width": 640,
+  "camera_height": 480,
+  "confidence_threshold": 0.6,
+  "gesture_hold_seconds": 0.35,
+  "neutral_release_seconds": 0.5,
+  "action_cooldown_seconds": 0.8,
+  "start_paused": true,
+  "disabled_gestures": [],
+  "calibration": {
+    "x_min": 0.08,
+    "x_max": 0.92,
+    "y_min": 0.08,
+    "y_max": 0.92
+  },
+  "modes": {
+    "normal": {
+      "open_palm": "move_mouse",
+      "pinch_index": "left_click",
+      "pinch_middle": "right_click",
+      "pinch_ring": "double_click",
+      "peace": "scroll_mode",
+      "thumb_up": "volume_up",
+      "thumb_down": "volume_down",
+      "four_fingers": "brightness_mode",
+      "copy_pose": "copy",
+      "paste_pose": "paste",
+      "undo_pose": "undo",
+      "redo_pose": "redo",
+      "shaka": "new_tab",
+      "rock": "screenshot"
+    },
+    "presentation": {
+      "open_palm": "move_mouse",
+      "closed_fist": "black_screen",
+      "swipe_left": "previous_slide",
+      "swipe_right": "next_slide",
+      "peace": "start_presentation",
+      "thumb_up": "next_slide",
+      "thumb_down": "previous_slide"
+    },
+    "gaming": {
+      "point_up": "press_w",
+      "peace": "jump",
+      "pinch_index": "interact",
+      "thumb_up": "jump",
+      "thumb_down": "crouch",
+      "swipe_left": "move_left",
+      "swipe_right": "move_right",
+      "copy_pose": "reload",
+      "paste_pose": "interact"
+    },
+    "browser": {
+      "point_up": "new_tab",
+      "peace": "close_tab",
+      "closed_fist": "refresh",
+      "open_palm": "reopen_tab",
+      "shaka": "next_tab",
+      "copy_pose": "previous_tab",
+      "thumb_up": "zoom_in",
+      "thumb_down": "zoom_out"
+    },
+    "windows": {
+      "peace": "alt_tab",
+      "closed_fist": "show_desktop",
+      "open_palm": "task_view",
+      "thumb_up": "next_desktop",
+      "thumb_down": "previous_desktop",
+      "rock": "screenshot"
+    }
+  }
+}
