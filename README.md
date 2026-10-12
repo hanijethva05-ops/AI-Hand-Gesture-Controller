@@ -1,22 +1,40 @@
-# AI Hand Gesture Desktop Controller
 
-A modular Windows desktop controller using Python, OpenCV, MediaPipe and PyAutoGUI.
+# 🖐️ AI Hand Gesture Control System
 
-## Features
+A Python-based desktop controller that uses hand gestures to interact with your computer through a webcam.
 
-- Webcam hand tracking with the official MediaPipe Gesture Recognizer model
-- Mouse movement, pinch clicks, scroll mode, drag, volume and brightness controls
-- Keyboard shortcuts, browser controls, media controls and Windows actions
-- Normal, Presentation, Gaming, Browser and Windows modes
-- Calibration, on-screen guide, action log and simple macro recording
-- Optional system tray menu
+The project uses MediaPipe, OpenCV, and PyAutoGUI to recognize gestures and connect them to desktop actions.
 
-## Folder structure
+## ✨ Features
+
+- Real-time hand landmark tracking
+- Mouse cursor control and pinch-based clicking
+- Gesture-based keyboard shortcuts
+- Browser and media controls
+- Windows desktop shortcuts
+- Multiple control modes
+- On-screen gesture guide and status display
+- Cursor calibration
+- Optional macro recording
+- Screenshot capture
+
+## 🛠️ Technologies
+
+- Python
+- MediaPipe
+- OpenCV
+- PyAutoGUI
+- NumPy
+- PyCAW
+- Screen Brightness Control
+
+## 📁 Project Structure
 
 ```text
-AI Hand Gesture Control System/
+AI_Hand_Gesture_Controller/
 ├── gesture_controller.py
 ├── gestures.py
+├── gesture_helpers.py
 ├── actions.py
 ├── calibration.py
 ├── feedback.py
@@ -26,76 +44,71 @@ AI Hand Gesture Control System/
 ├── config.json
 ├── requirements.txt
 ├── requirements-dev.txt
-├── gesture.txt
-├── GESTURE_GUIDE.txt
 ├── tests/
-│   └── test_helpers.py
 ├── docs/
-└── models/  (the model is downloaded here on first launch)
+└── README.md
 ```
 
-## Requirements
+## 💻 Requirements
 
 - Windows recommended
 - Python 3.12 recommended
-- Webcam
-- Internet connection on first run to download `gesture_recognizer.task`
+- A working webcam
+- Internet access for the initial gesture model download
 
-## Install
+## 🚀 Installation
 
-Run these commands from this folder in VS Code Terminal:
+Clone this repository:
+
+```bash
+git clone https://github.com/hanijethva05-ops/AI-Hand-Gesture-Controller.git
+cd AI-Hand-Gesture-Controller
+```
+
+Create a virtual environment:
+
+```bash
+py -3.12 -m venv .venv
+```
+
+Install the dependencies:
 
 ```powershell
-py -3.12 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
 ```
 
-If you already have a `.venv`, skip the first command.
-
-## Run
+## ▶️ Run the Controller
 
 ```powershell
 .\.venv\Scripts\python.exe gesture_controller.py
 ```
 
-Start in another mode:
+The controller starts paused for safety. Focus the webcam window and press `P` to resume gesture actions.
 
-```powershell
-.\.venv\Scripts\python.exe gesture_controller.py --mode presentation
-```
+## ⌨️ Keyboard Controls
 
-List the configured mappings:
+| Key | Action |
+|---|---|
+| `M` | Switch control mode |
+| `P` | Pause or resume |
+| `C` | Start calibration |
+| `R` | Reset calibration |
+| `H` | Toggle HUD |
+| `G` | Toggle gesture guide |
+| `L` | Toggle action log |
+| `1` | Start macro recording |
+| `2` | Stop and save macro |
+| `3` | Play recorded macro |
+| `S` | Save calibration |
+| `Q` | Quit the controller |
 
-```powershell
-.\.venv\Scripts\python.exe gesture_controller.py --list
-```
+## 🔒 Safety Notes
 
-Test the HUD without a webcam:
+- Test new gestures in a safe environment.
+- Desktop shortcuts can affect the currently active application.
+- Keep a backup of important files before testing keyboard or mouse automation.
+- Do not commit passwords, API keys, or private configuration data.
 
-```powershell
-.\.venv\Scripts\python.exe gesture_controller.py --demo
-```
+## 👩‍💻 Author
 
-## Keyboard controls
-
-- `M`: change mode
-- `P`: pause/resume
-- `C`: calibrate cursor mapping by moving the hand around the camera area
-- `R`: reset calibration
-- `H`: toggle HUD
-- `G`: toggle gesture guide
-- `L`: toggle action log
-- `1`: start macro recording
-- `2`: stop and save macro recording
-- `3`: replay recorded macro
-- `S`: save calibration
-- `Q`: quit safely
-
-## Notes
-
-- The app starts paused to reduce accidental system actions.
-- Media and browser actions are sent to the currently active application. A shortcut can behave differently depending on the app.
-- Brightness control depends on monitor hardware/driver support; external monitors may not support it.
-- System tray support is optional. If the dependency is unavailable, the main window can still be used.
-- Hand gesture recognition is probabilistic; keep your hand well lit and fully visible.
-- Do not test actions like closing tabs or deleting content in important windows until you understand the assigned gesture.
+Created as a Python desktop automation and computer-vision project.
